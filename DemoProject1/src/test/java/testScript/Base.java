@@ -1,11 +1,15 @@
 package testScript;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+
+import utilities.WaitUtility;
 
 public class Base {
 	
@@ -30,6 +34,7 @@ WebDriver driver;
 		 //driver = new ChromeDriver();
 		//driver = new EdgeDriver();
 		driver.get("https://groceryapp.uniqassosiates.com/admin");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtility.IMPLICIT_WAIT));
 		 
 		driver.manage().window().maximize();
 		

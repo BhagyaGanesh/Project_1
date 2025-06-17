@@ -6,8 +6,7 @@
     <classes>
       <class name="testScript.LoginTest">
       <methods>
-      <include name="verifyAlertMessageIsComingOnGivingInvalidPassword">
-      </include>
+      <include name="verifyAlertMessageIsComingOnGivingInvalidPassword"></include>
       <include name ="verifyTheUserIsAbleToLoginUsingValidCredentials"></include> 
       </methods>
       </class>
