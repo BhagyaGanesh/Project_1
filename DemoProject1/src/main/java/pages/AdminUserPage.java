@@ -32,12 +32,12 @@ public class AdminUserPage {
 		newadmin.click();
 	}
 	
-	public void giveAdminName() {
-		adminname.sendKeys("Dell");
+	public void giveAdminName(String username) {
+		adminname.sendKeys(username);
 	}
 	
-	public void giveAdminPass() {
-		adminpass.sendKeys("Cinema");
+	public void giveAdminPass(String password) {
+		adminpass.sendKeys(password);
 	}
 	
 	public void admintype() {

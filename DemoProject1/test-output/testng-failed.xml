@@ -9,7 +9,7 @@
     <classes>
       <class name="testScript.AdminUserTest">
         <methods>
-          <include name="driverQuit"/>
+          <include name="browserQuit"/>
           <include name="browserInitialization"/>
           <include name="addAdmin"/>
         </methods>

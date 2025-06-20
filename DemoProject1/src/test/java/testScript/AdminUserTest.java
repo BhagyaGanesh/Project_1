@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import pages.AdminUserPage;
 import pages.LoginPage;
+import utilities.FakerUtility;
 
 public class AdminUserTest extends Base{
 	
@@ -17,10 +18,15 @@ public class AdminUserTest extends Base{
 		loginpage.enterThePassword(password);
 		loginpage.clickTheSignin();
 		AdminUserPage adminuserpage = new AdminUserPage(driver);
+		//String adminusername = "Hey";
+		//String adminpassword = "pass";
+	FakerUtility fakerutility = new FakerUtility();
+	String adminusername = fakerutility.creatARandomFirstName();
+	String adminpassword = fakerutility.creatARandomFirstName();
 		adminuserpage.clickMoreInfo();
 		adminuserpage.clickNewAdmin();
-		adminuserpage.giveAdminName();
-		adminuserpage.giveAdminPass();
+		adminuserpage.giveAdminName(adminusername);
+		adminuserpage.giveAdminPass(adminpassword);
 		adminuserpage.admintype();
 		adminuserpage.saveAdmin();
 	}
