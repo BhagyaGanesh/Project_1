@@ -50,6 +50,7 @@ public class LoginTest extends Base{
 		//String password = "admin563";
 		String username = ExcelUtility.getStringData(3, 0, "loginpage");
 		String password = ExcelUtility.getStringData(3, 1, "loginpage");
+		
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterTheUsername(username);
 		loginpage.enterThePassword(password);
